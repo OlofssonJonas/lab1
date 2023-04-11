@@ -5,7 +5,6 @@
 	<title>Hej header</title>
 
     <!-- Varför ligger jquery i head och js i footern -->
-	<script src="js/jquery.js"></script>
 	<?php wp_head(); ?>
 </head>
 <body>
@@ -54,7 +53,7 @@
                     (
 								array(
 								'menu' => "primary",
-								'container' => "",
+								//'container' => "",
 								'theme_location' => "primary",
 								//'items_wrap' => '<ul class="menu">&3$s</ul>'
 								)
