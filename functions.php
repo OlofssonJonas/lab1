@@ -1,6 +1,7 @@
 <?php
 
 add_theme_support('post-thumbnails');
+add_theme_support('widgets');
 
 //köa in CSS
 function style() {
@@ -11,16 +12,16 @@ function style() {
 }
 add_action('wp_enqueue_scripts', 'style');
 
-// function scripts() {
+function scripts() {
     
-//     wp_deregister_script('jquery');
-//     wp_register_script('jquery', get_template_directory_uri(). '/assets/js/jquery.js');
-//     wp_enqueue_script('jquery');
+    wp_deregister_script('jquery');
+    wp_register_script('jquery', get_template_directory_uri(). '/assets/js/jquery.js');
+    wp_enqueue_script('jquery');
 
-//     wp_register_script('js', get_template_directory_uri(). '/assets/js/script.js');
-//     wp_enqueue_script('js');
-// }
-// add_action('wp_enqueue_scripts', 'scripts');
+    wp_register_script('js', get_template_directory_uri(). '/assets/js/script.js');
+    wp_enqueue_script('js');
+}
+add_action('wp_enqueue_scripts', 'scripts');
 
 
 //funktion för att registrera menyer
@@ -36,4 +37,10 @@ add_action('wp_enqueue_scripts', 'style');
     
 add_action('init', 'menu');
 
+
+//registrear widgetar
+ register_sidebar(
+    ['name' => 'rightWidget',
+    'id' => 'right']
+)
 ?>

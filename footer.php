@@ -43,10 +43,12 @@
 				</div>
 			</div>
 		</footer>
-
+		<div>
+			<!-- det här är koden för att få in widgets -->
+			<!-- ?php dynamic_sidebar('right'); ? -->
 	</div>
 
 	<script src="js/script.js"></script>
-
+	<?php wp_footer(); ?>
 </body>
 </html>

@@ -1,3 +1,10 @@
+<?php 
+/*
+Template name: Kontaktsida
+*/
+
+;?>
+
 <?php get_header(); ?>
 
 <!-- Detta är kontaktsidan -->

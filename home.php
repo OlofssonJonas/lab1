@@ -5,8 +5,8 @@
 					<div class="row">
 						<div id="primary" class="col-xs-12 col-md-9">
 							<h1><?php wp_title($sep=''); ?></h1>
-							<!-- </article>  -->
 								<h2 class="title"></h2>
+
 								<?php while (have_posts()){ ?>
 									<article class="image">
 									<?php the_post();
@@ -18,9 +18,8 @@
 									</article>
 									<?php
 								}
-								?>
-								
-							<!-- </article>  -->
+								?>	
+
 							<nav class="navigation pagination">
 								<h2 class="screen-reader-text">Inläggsnavigering</h2>
 								<a class="prev page-numbers" href="">Föregående</a>
@@ -36,8 +35,9 @@
 										<form id="searchform" class="searchform">
 											<div>
 												<label class="screen-reader-text">Sök efter:</label>
-												<input type="text" />
+												<input type="text" /> -->
 												<input type="submit" value="Sök" />
+												<!-- <?php get_search_form(); ?> -->
 											</div>
 										</form>
 									</li>
@@ -47,7 +47,8 @@
 										<h2>Sidor</h2>
 										<ul>
 											<li class="page_item current_page_item">
-												<a href="">Blogg</a>
+											<?php dynamic_sidebar('right'); ?>
+												<!-- <a href="">Blogg</a>
 											</li>
 											<li class="page_item">
 												<a href="">Exempelsida</a>
@@ -72,7 +73,7 @@
 												</ul>
 											</li>
 											<li class="page_item">
-												<a href="">Startsida</a>
+												<a href="">Startsida</a> -->
 											</li>
 										</ul>
 									</li>

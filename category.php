@@ -1,19 +1,30 @@
-<?php get_header();?>
-<main>
+<?php get_header() ;?>
+		<main>
 			<section>
 				<div class="container">
 					<div class="row">
 						<div id="primary" class="col-xs-12 col-md-9">
-							<article class="image">
-								<?php while (have_posts()){
-									the_post();
-										the_post_thumbnail('large');?>								
-										<h1 class="title"><?php the_title(); ?></h1>
-										<?php get_template_part('article');
-										the_content();
-									} ?>
-							
-							</article>
+							<h1><?php wp_title($sep=''); ?></h1>
+								<h2 class="title"></h2>
+								<?php while (have_posts()){ ?>
+									<article class="image">
+									<?php the_post();
+									the_post_thumbnail('large');
+									get_template_part('links');
+									get_template_part('article');
+									the_excerpt(); 
+									?>
+									</article>
+									<?php
+								}
+								?>	
+							<nav class="navigation pagination">
+								<h2 class="screen-reader-text">Inläggsnavigering</h2>
+								<a class="prev page-numbers" href="">Föregående</a>
+								<span class="page-numbers current">1</span>
+								<a class="page-numbers" href="">2</a>
+								<a class="next page-numbers" href="">Nästa</a>
+							</nav>
 						</div>
 						<aside id="secondary" class="col-xs-12 col-md-3">
 							<div id="sidebar">
@@ -33,7 +44,8 @@
 										<h2>Sidor</h2>
 										<ul>
 											<li class="page_item current_page_item">
-												<a href="">Blogg</a>
+											<?php dynamic_sidebar('right'); ?>
+												<!-- <a href="">Blogg</a>
 											</li>
 											<li class="page_item">
 												<a href="">Exempelsida</a>
@@ -58,7 +70,7 @@
 												</ul>
 											</li>
 											<li class="page_item">
-												<a href="">Startsida</a>
+												<a href="">Startsida</a> -->
 											</li>
 										</ul>
 									</li>
@@ -88,6 +100,4 @@
 				</div>
 			</section>
 		</main>
-
-
-		
+	<?php get_footer();

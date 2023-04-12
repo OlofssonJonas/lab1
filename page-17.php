@@ -1,3 +1,9 @@
+<?php 
+/*
+Template Name: Undersida 3
+*/
+?>
+
 <?php get_header(); ?>
 <!-- Detta är undersida 3 -->
 		<main>
