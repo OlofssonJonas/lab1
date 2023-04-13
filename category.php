@@ -1,11 +1,13 @@
 <?php get_header() ;?>
+
 		<main>
 			<section>
 				<div class="container">
 					<div class="row">
 						<div id="primary" class="col-xs-12 col-md-9">
 							<h1><?php wp_title($sep=''); ?></h1>
-								<h2 class="title"></h2>
+								
+
 								<?php while (have_posts()){ ?>
 									<article class="image">
 									<?php the_post();
@@ -100,4 +102,5 @@
 				</div>
 			</section>
 		</main>
+
 	<?php get_footer();

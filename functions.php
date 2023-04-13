@@ -38,9 +38,27 @@ add_action('wp_enqueue_scripts', 'scripts');
 add_action('init', 'menu');
 
 
-//registrear widgetar
- register_sidebar(
-    ['name' => 'rightWidget',
-    'id' => 'right']
-)
+//registrerar widgetar
+ function theme_widgets() {
+    $widgets = array(
+        array (
+            'name' => 'rightWidget1',
+            'id' => 'rightWidget1',
+        ),
+        array(
+            'name' => 'rightWidget2',
+            'id' => 'rightWidget2',
+        ),
+        array(
+            'name' => 'rightWidget3',
+            'id' => 'rightWidget3',
+        ),
+    );
+    foreach ($widgets as $widget) {
+        register_sidebar($widget);
+    }
+}
+add_action('init', 'theme_widgets');
+
+
 ?>

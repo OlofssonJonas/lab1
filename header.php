@@ -17,14 +17,13 @@
 					<div class="col-xs-8 col-sm-6">
 					<a class="logo" href="<?php echo home_url(); ?>">Labb 1</a>
 					</div>
-					<div class="col-sm-6 hidden-xs">
-						<form id="searchform" class="searchform">
+						<div class="col-sm-6 hidden-xs">
+							<form method="get" id="searchform" class="searchform" action="<?php echo esc_url(home_url('/'));?>">
 							<div>
-								<label class="screen-reader-text">Sök efter:</label>
-								<input type="text" />
-								<input type="submit" value="Sök" />
-							</div>
-						</form>
+								
+								<?php get_search_form() ;?>
+							</div> 
+						</form> 
 					</div>
 					<div class="col-xs-4 text-right visible-xs">
 						<div class="mobile-menu-wrap">
@@ -41,6 +40,7 @@
 					<label class="screen-reader-text">Sök efter:</label>
 					<input type="text" />
 					<input type="submit" value="Sök" />
+					
 				</div>
 			</form>
 		</div>
