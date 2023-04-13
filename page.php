@@ -9,7 +9,14 @@
 							<p><?php the_content(); ?></p>
 						</div>
 						<aside id="secondary" class="col-xs-12 col-md-3">
-						<?php get_sidebar(); ?>
+						<?php wp_nav_menu(
+											array(
+												'menu' => "side",									
+												'theme_location' => "side",
+												'items_wrap' => '<ul class="side-menu">%3$s</ul>'
+												)
+											); 
+											?>
 						</aside>
 					</div>
 				</div>

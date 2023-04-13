@@ -16,7 +16,8 @@
 
 							</article>
 						</div>
-						<aside id="secondary" class="col-xs-12 col-md-3">
+						<?php get_sidebar(); ?>
+						<!-- <aside id="secondary" class="col-xs-12 col-md-3">
 							<div id="sidebar">
 								<ul>
 									<li>
@@ -32,53 +33,26 @@
 										<h2>Sidor</h2>
 										<ul>
 											<li class="page_item current_page_item">
-												<!-- <a href="">Blogg</a>
-											</li>
-											<li class="page_item">
-												<a href="">Exempelsida</a>
-											</li>
-											<li class="page_item">
-												<a href="">Kontakt</a>
-											</li>
-											<li class="page_item page_item_has_children">
-												<a href="">Om mig</a>
-												<ul class="children">
-													<li class="page_item">
-														<a href="">Intressen</a>
-													</li>
-													<li class="page_item page_item_has_children">
-														<a href="">Portfolio</a>
-														<ul class="children">
-															<li class="page_item">
-																<a href="">Projekt 1</a>
-															</li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-											<li class="page_item">
-												<a href="">Startsida</a>
-											</li>
-										</ul> -->
-										<?php dynamic_sidebar('rightWidget1'); ?>
+										</ul> 
+										?php dynamic_sidebar('rightWidget1'); ?>
 									</li>
 									<li>
 										<h2>Arkiv</h2>
 										<ul>
-											<?php dynamic_sidebar('rigtWidget2'); ?>
+											?php dynamic_sidebar('rightWidget2'); ?>
 										</ul>
 									</li>
 									<li class="categories">
 										<h2>Kategorier</h2>
 										<ul>
 											<li class="cat-item">
-											<?php dynamic_sidebar('rightWidget3');?>
+											?php dynamic_sidebar('rightWidget3');?>
 											</li>
 										</ul>
 									</li>
 								</ul>
 							</div>
-						</aside>
+						</aside> -->
 					</div>
 				</div>
 			</section>

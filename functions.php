@@ -13,13 +13,8 @@ function style() {
 add_action('wp_enqueue_scripts', 'style');
 
 function scripts() {
-    
-    wp_deregister_script('jquery');
-    wp_register_script('jquery', get_template_directory_uri(). '/assets/js/jquery.js');
-    wp_enqueue_script('jquery');
-
-    wp_register_script('js', get_template_directory_uri(). '/assets/js/script.js');
-    wp_enqueue_script('js');
+    wp_enqueue_script('jquery', get_template_directory_uri(). '/assets/js/jquery.js', array(), '1.0', true);
+    wp_enqueue_script('js', get_template_directory_uri(). '/assets/js/script.js', array(), '1.0', true);
 }
 add_action('wp_enqueue_scripts', 'scripts');
 

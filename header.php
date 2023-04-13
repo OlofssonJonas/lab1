@@ -3,14 +3,10 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Hej header</title>
-
-    <!-- Varför ligger jquery i head och js i footern -->
 	<?php wp_head(); ?>
 </head>
 <body>
-	
 	<div id="wrap">
-		
 		<header id="header">
 			<div class="container">
 				<div class="row">
@@ -20,7 +16,6 @@
 						<div class="col-sm-6 hidden-xs">
 							<form method="get" id="searchform" class="searchform" action="<?php echo esc_url(home_url('/'));?>">
 							<div>
-								
 								<?php get_search_form() ;?>
 							</div> 
 						</form> 
@@ -49,16 +44,16 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-xs-12">
-					<?php wp_nav_menu
+					 	<?php wp_nav_menu
                     (
-								array(
-								'menu' => "primary",
-								//'container' => "",
-								'theme_location' => "primary",
-								//'items_wrap' => '<ul class="menu">&3$s</ul>'
-								)
-							); 
-							?> 
+							 	array(
+							 	'menu' => "primary",
+							 	//'container' => "",
+							 	'theme_location' => "primary",
+							 	//'items_wrap' => '<ul class="menu">&3$s</ul>'
+							 	)
+							 ); 
+							 ?>
 					</div>
 				</div>
 			</div>	
