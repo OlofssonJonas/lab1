@@ -1,5 +1,5 @@
 
-							  			<!-- <?php wp_nav_menu(
+							  			<!-- ?php wp_nav_menu(
 											array(
 												'menu' => "side",									
 												'theme_location' => "side",
@@ -9,7 +9,7 @@
 											?> -->
 
 
-<aside id="secondary" class="col-xs-12 col-md-3">
+						<aside id="secondary" class="col-xs-12 col-md-3">
 							<div id="sidebar">
 								<ul>
 									<li>
@@ -25,8 +25,8 @@
 									<li class="pagenav">
 										<h2>Sidor</h2>
 										<ul>
-											<li class="page_item current_page_item">
 											<?php dynamic_sidebar('rightWidget1'); ?>
+											<li class="page_item current_page_item"> 
 												
 											</li>
 										</ul>

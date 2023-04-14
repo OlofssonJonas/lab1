@@ -23,7 +23,7 @@
 									<li>
 										<form method="get" id="searchform" class="searchform" action="">
 											<div>
-												<?php get_search_form(); ?>
+												?php get_search_form(); ?>
 											</div>
 										</form>
 									</li>

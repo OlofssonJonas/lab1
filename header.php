@@ -17,7 +17,7 @@
 							<form method="get" id="searchform" class="searchform" action="<?php echo esc_url(home_url('/'));?>">
 							<div>
 								<?php get_search_form() ;?>
-							</div> 
+							</div>
 						</form> 
 					</div>
 					<div class="col-xs-4 text-right visible-xs">
@@ -32,10 +32,7 @@
         <div class="mobile-search">
 			<form id="searchform" class="searchform">
 				<div>
-					<label class="screen-reader-text">Sök efter:</label>
-					<input type="text" />
-					<input type="submit" value="Sök" />
-					
+					<?php get_search_form(); ?>
 				</div>
 			</form>
 		</div>
@@ -47,10 +44,8 @@
 					 	<?php wp_nav_menu
                     (
 							 	array(
-							 	'menu' => "primary",
-							 	//'container' => "",
 							 	'theme_location' => "primary",
-							 	//'items_wrap' => '<ul class="menu">&3$s</ul>'
+							 	'items_wrap' => '<ul class="menu">%3$s</ul>'
 							 	)
 							 ); 
 							 ?>

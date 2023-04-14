@@ -39,6 +39,8 @@ add_action('init', 'menu');
         array (
             'name' => 'rightWidget1',
             'id' => 'rightWidget1',
+            'before_widget' => '',
+            'after_widget' => ''
         ),
         array(
             'name' => 'rightWidget2',
@@ -47,6 +49,23 @@ add_action('init', 'menu');
         array(
             'name' => 'rightWidget3',
             'id' => 'rightWidget3',
+        ),
+        array(
+            'name' => 'footWidget1',
+            'id' => 'footWidget1',
+            'before_widget' => '',
+            'after_widget' => ''
+        ),
+        array(
+                'name' => 'footWidget2',
+            'id' => 'footWidget2',
+            'before_widget' => '',
+            'after_widget' => ''
+        ),
+        array(
+            'name' => 'footWidget3',
+            'id' => 'footWidget3',
+            
         ),
     );
     foreach ($widgets as $widget) {

@@ -28,7 +28,7 @@ Template Name: undersida 2
                         </aside>
 					</div>
 				</div>
-			</section>
+			</section>	
 		</main>
 
 <?php get_footer(); ?>
