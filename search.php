@@ -27,6 +27,7 @@
 									</article>
 									<?php
 							}
+							echo "No results"
 							?>
 							</div>
 							

@@ -1,5 +1,5 @@
 <?php
-
+add_theme_support('menus');
 add_theme_support('post-thumbnails');
 add_theme_support('widgets');
 
@@ -25,7 +25,6 @@ add_action('wp_enqueue_scripts', 'scripts');
     $locations = array(
         'primary' => "Header Menu",
         'side' => "Side Menu",
-        'footer' => "Footer Menu"
         );
         register_nav_menus($locations);
     }

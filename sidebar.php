@@ -6,15 +6,15 @@
 									<li>
 										<form method="get" id="searchform" class="searchform" action="<?php echo esc_url(home_url('/'));?>">								
 											<div>
-												<label class="screen-reader-text">Sök efter:</label>
-												</div>
-												 <?php get_search_form(); ?>
+												<h2>Sök efter:</h2>
+												<?php get_search_form(); ?>
+												
+											</div>
 										</form>
 									</li>
 								</ul>
 								<ul role="navigation">
 									<li class="pagenav">
-										<!-- <h2>Sidor</h2> -->
 										<ul>
 											<?php dynamic_sidebar('rightWidget1'); ?>
 											<li class="page_item current_page_item"> 
@@ -23,7 +23,6 @@
 										</ul>
 									</li>
 									<li>
-										<!-- <h2>Arkiv</h2> -->
 										<ul>
 											<li>
 											<?php dynamic_sidebar('rightWidget2'); ?>
@@ -31,7 +30,6 @@
 										</ul>
 									</li>
 									<li class="categories">
-										<!-- <h2>Kategorier</h2> -->
 										<ul>
 											<li class="cat-item">
 												<?php dynamic_sidebar('rightWidget3');?>

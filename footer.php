@@ -23,7 +23,7 @@
 					<div class="col-xs-12">
 						
 						<!-- det här är koden för att få in widgets -->
-						<?php dynamic_sidebar('footWidget4'); ?>
+						 <?php dynamic_sidebar('footWidget4'); ?>
 					</div>
 				</div>
 			</div>
