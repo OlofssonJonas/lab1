@@ -1,6 +1,9 @@
 <?php
+//öppnar upp för att använda menyer
 add_theme_support('menus');
+//öppnar upp för att använda thumbnails
 add_theme_support('post-thumbnails');
+//öppnar upp för att använda widgets
 add_theme_support('widgets');
 
 //köa in CSS
@@ -86,11 +89,8 @@ add_action('init', 'menu');
 }
 add_action('init', 'theme_widgets');
 
-add_filter('the_content', 'my_content_filter');
 
-function my_content_filter ($content){
-    $new_content = str_replace ('t', '5', '$content');
-    return $content;
-}
+
+
 
 ?>
