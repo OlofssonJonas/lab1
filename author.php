@@ -11,8 +11,8 @@
 									<article class="image">
 									<?php the_post();
 									the_post_thumbnail('large');
-									get_template_part('links');
-									get_template_part('article');
+									get_template_part('/template-part/part', 'links');
+									get_template_part('/template-part/part', 'article');
 									the_excerpt(); 
 									?>
 									</article>

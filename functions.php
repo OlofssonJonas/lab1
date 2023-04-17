@@ -45,10 +45,14 @@ add_action('init', 'menu');
         array(
             'name' => 'rightWidget2',
             'id' => 'rightWidget2',
+            'before_widget' => '',
+            'after_widget' => ''
         ),
         array(
             'name' => 'rightWidget3',
             'id' => 'rightWidget3',
+            'before_widget' => '',
+            'after_widget' => ''
         ),
         array(
             'name' => 'footWidget1',
@@ -65,6 +69,15 @@ add_action('init', 'menu');
         array(
             'name' => 'footWidget3',
             'id' => 'footWidget3',
+            'before_widget' => '',
+            'after_widget' => ''
+            
+        ),
+        array(
+            'name' => 'footWidget4',
+            'id' => 'footWidget4',
+            'before_widget' => '',
+            'after_widget' => ''
             
         ),
     );
@@ -74,5 +87,11 @@ add_action('init', 'menu');
 }
 add_action('init', 'theme_widgets');
 
+add_filter('the_content', 'my_content_filter');
+
+function my_content_filter ($content){
+    $new_content = str_replace ('t', '5', '$content');
+    return $content;
+}
 
 ?>

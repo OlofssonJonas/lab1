@@ -13,8 +13,9 @@ Template Name: undersida 2
                 <div class="container">
                     <div class="row">
                         <div id="primary" class="col-xs-12 col-md-9 col-md-push-3">
-                            <h1><?php echo the_title(); ?></h1>
-                            <p><?php the_content(); ?></p>
+								<h1><?php echo the_title(); ?></h1>
+								<p><?php the_content(); ?></p>
+							
                         </div>
                         <aside id="secondary" class="col-xs-12 col-md-3 col-md-pull-9">
                         <?php wp_nav_menu(
