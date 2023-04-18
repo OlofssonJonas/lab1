@@ -27,6 +27,7 @@
 								<?php echo paginate_links(); ?>
 							</nav>
 						</div>
+						<?php get_sidebar(); ?>
 					</div>
 				</div>
 			</section>
@@ -35,11 +36,3 @@
 
 
 <?php get_footer(); ?>
-
-
-<!-- Detta är arkivsida
-kolla dokumentation om get_option
-
-
-<h1>?php get_option('home'); ?></h1>
-?php the_archive_title(); ? -->
